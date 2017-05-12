@@ -40,7 +40,6 @@ function removeItemFromState(state, item) {
 
 function toggleCheckedInState(state, item) {
     state.shoppingList.forEach(function(el) {
-        console.log(state);
         if (el.name === item) {
             el.checked === true ? el.checked = false : el.checked = true;
         }
