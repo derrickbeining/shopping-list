@@ -21,24 +21,26 @@ button:hover {
 .container {
   max-width: 600px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .shopping-list {
   list-style: none;
   padding-left: 0;
+  width: 100%;
 }
 
 .shopping-list > li {
   margin-bottom: 20px;
-  border: 1px solid grey;
+  border: 5px solid grey;
   padding: 20px;
 }
 
 .shopping-item {
   display: block;
-  color: grey;
+  color: gray;
   font-style: italic;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 

@@ -21,7 +21,6 @@ function initiateShoppingListState () {
                 });
         }
     }
-    renderListToDOM(state, $(".shopping-list"));
 }
 
 function addItemToState(state, item) {
