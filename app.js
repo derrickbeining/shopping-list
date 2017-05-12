@@ -76,9 +76,12 @@ function updateShoppingListOnDelete() {
 function updateShoppingListOnSubmit() {
     $("#js-shopping-list-form").submit(function(event) {
         event.preventDefault();
-        addItemToState(state, $("#shopping-list-entry").val());
-        renderListToDOM(state, $(".shopping-list"));
-        $("#shopping-list-entry").val('');
+
+        if ($("#shopping-list-entry").val() !== '') {
+            addItemToState(state, $("#shopping-list-entry").val());
+            renderListToDOM(state, $(".shopping-list"));
+            $("#shopping-list-entry").val('');
+        }
     })
 }
 
